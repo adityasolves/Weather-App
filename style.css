@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #ecf0f1;
+  }
+  
+  .weather-app {
+    background-color: #1f2a36;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .city-search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .city-search-form input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .city-search-form input:focus {
+    background-color: #2c3e50;
+  }
+  
+  .city-search-form button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .city-search-form button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Weather info styles */
+  .weather-header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #f1c40f;
+  }
+  
+  .weather-header .date {
+    font-size: 1em;
+    color: #bdc3c7;
+  }
+  
+  .weather-info {
+    margin: 20px 0;
+  }
+  
+  .temperature {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 4em;
+    font-weight: bold;
+    animation: zoomIn 0.8s ease;
+  }
+  
+  .temp-number {
+    margin-right: 5px;
+  }
+  
+  .weather-description {
+    font-size: 1.5em;
+    color: #f39c12;
+    margin-top: 10px;
+    animation: slideUp 0.8s ease;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    animation: slideUp 1s ease;
+  }
+  
+  .detail p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #95a5a6;
+  }
+  
+  .detail span {
+    font-size: 1.2em;
+    color: #ecf0f1;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
